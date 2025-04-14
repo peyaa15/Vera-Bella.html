@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Siswa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .neon-text {
+            text-shadow: 0 0 5px #00E5FF, 0 0 10px #00E5FF, 0 0 15px #00E5FF;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .light-mode .neon-text {
+            text-shadow: 0 0 5px #007BFF, 0 0 10px #007BFF, 0 0 15px #007BFF;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-950 text-gray-200 transition-all duration-500">
+    <div id="card" class="bg-gray-900 p-8 rounded-xl shadow-xl text-center border border-gray-700 max-w-md w-full fade-in">
+        <h2 id="title" class="text-3xl font-bold mb-4 text-cyan-400 neon-text">Data Siswa</h2>
+        <p id="nama" class="text-lg text-gray-300 mb-2"><strong>Nama:</strong> Vera Bella Kusumawati</p>
+        <p id="kelas" class="text-lg text-gray-300 mb-2"><strong>Kelas:</strong> X B</p>
+        <p id="jurusan" class="text-lg text-gray-300 mb-4"><strong>Jurusan:</strong> DKV</p>
+        <button id="toggleBtn" class="mt-4 px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow-md hover:from-blue-500 hover:to-purple-500 transition-all duration-300">Mode Terang</button>
+    </div>
+    
+    <script>
+        document.getElementById("toggleBtn").addEventListener("click", function() {
+            document.body.classList.toggle("bg-gray-950");
+            document.body.classList.toggle("bg-white");
+            document.body.classList.toggle("text-gray-900");
+            document.getElementById("card").classList.toggle("bg-gray-900");
+            document.getElementById("card").classList.toggle("bg-gray-200");
+            document.getElementById("title").classList.toggle("text-cyan-400");
+            document.getElementById("title").classList.toggle("text-blue-600");
+            document.getElementById("nama").classList.toggle("text-gray-300");
+            document.getElementById("nama").classList.toggle("text-gray-700");
+            document.getElementById("kelas").classList.toggle("text-gray-300");
+            document.getElementById("kelas").classList.toggle("text-gray-700");
+            document.getElementById("jurusan").classList.toggle("text-gray-300");
+            document.getElementById("jurusan").classList.toggle("text-gray-700");
+            
+            let toggleBtn = document.getElementById("toggleBtn");
+            if (document.body.classList.contains("bg-white")) {
+                toggleBtn.textContent = "Mode Gelap";
+            } else {
+                toggleBtn.textContent = "Mode Terang";
+            }
+        });
+    </script>
+</body>
+</html>

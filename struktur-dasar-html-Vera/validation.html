@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-blue-50 flex items-center justify-center min-h-screen relative">
+    <div class="absolute top-0 left-0 w-[30rem] h-[30rem] bg-blue-300 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="absolute bottom-0 right-0 w-[30rem] h-[30rem] bg-blue-800 rounded-full translate-x-1/2 translate-y-1/2"></div>
+    <div class="relative w-full max-w-sm p-8 bg-white rounded-lg shadow-2xl">
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+            <img alt="Logo" class="w-12 h-12" height="50" src="https://www.smkibgbogor.sch.id/media_library/images/e0f0f006cf07a10c10c77a55552fc21a.png" width="50"/>
+        </div>
+        <div class="mt-20 text-center">
+            <h2 class="text-2xl font-semibold text-gray-700">Welcome Back</h2>
+            <form class="mt-6">
+                <div class="mb-4">
+                    <input class="w-full px-4 py-2 text-gray-700 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Username" type="text"/>
+                </div>
+                <div class="mb-4">
+                    <input class="w-full px-4 py-2 text-gray-700 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Password" type="password"/>
+                </div>
+                <button class="w-full px-4 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600" type="submit">Sign In</button>
+            </form>
+            <p class="mt-4 text-sm text-gray-600">Need an account? <a class="text-blue-600 hover:underline" href="#">Sign up here</a></p>
+        </div>
+    </div>
+</body>
+</html>

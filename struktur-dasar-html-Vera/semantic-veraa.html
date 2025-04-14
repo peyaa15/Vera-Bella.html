@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Pembelian</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .nota-container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        header, footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #555;
+            color: white;
+        }
+        .total {
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="nota-container">
+        <header>
+            <h2>Toko Fashion Maju</h2>
+            <p>Jl. Cikerti No. 5, Bogor</p>
+        </header>
+        
+        <main>
+            <section>
+                <h3>Informasi Pembeli</h3>
+                <p><strong>Nama:</strong> Budiono Siregar</p>
+                <p><strong>Tanggal:</strong> 15 Maret 2025</p>
+            </section>
+            
+            <section>
+                <h3>Daftar Pembelian</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Jumlah</th>
+                            <th>Harga</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kemeja Polos</td>
+                            <td>2</td>
+                            <td>Rp 150.000</td>
+                            <td>Rp 300.000</td>
+                        </tr>
+                        <tr>
+                            <td>Celana Jeans</td>
+                            <td>1</td>
+                            <td>Rp 250.000</td>
+                            <td>Rp 250.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        
+        <footer>
+            <p class="total">Total Bayar: <strong>Rp 550.000</strong></p>
+            <p>Terima kasih telah berbelanja!</p>
+        </footer>
+    </div>
+</body>
+</html>
